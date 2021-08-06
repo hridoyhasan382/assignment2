@@ -36,6 +36,9 @@ body{
        color: white;
        background: #E02C6D ;
        padding: 12px 40px;
+       background-image: url(images/arrow-right-solid.svg);
+       background-position: right;
+       background-repeat: no-repeat;
     }
    .banner-img img{
        width: 556px;
