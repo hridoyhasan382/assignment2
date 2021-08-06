@@ -1,0 +1,130 @@
+/* ========================================== imported font =============================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* ========================================== common css ===================================================  */
+body{
+    margin:0;
+    padding:0;
+     font-family: 'Poppins', sans-serif;
+   }
+.container{
+    width: 1050px;
+    padding: 30px;
+}
+
+   /* ============================================== Banner Start ==========================================  */
+   header{
+       display: flex;
+       justify-content: center;
+       background: #2D25A0;
+   }
+
+
+
+
+   .banner{
+       display: flex;
+       justify-content: space-between;
+   }
+   .banner-left h2{
+    font-size: 54px;
+    color: white;
+   }
+  
+   .banner-button a{
+       text-decoration: none;
+       color: white;
+       background: #E02C6D ;
+       padding: 12px 40px;
+    }
+   .banner-img img{
+       width: 556px;
+       height: 448px;
+       transition: .5s ease;
+   }
+   .banner-img img:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;s
+   }
+
+    /* ============================================== Banner End ==========================================  */
+    
+    /* ============================================== Photo Album Start ====================================  */
+  
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .single{
+       width: 330px;
+       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       margin:5px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 10px;;
+   }
+    .photo-album {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }    
+    .single img{
+        width: 300px;
+        height: 256px;
+    }
+
+
+
+
+    /* ============================================== Photo Album end ====================================  */
+
+
+    /* ============================================== Footer Start ====================================  */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo img{
+        width: 483px;
+        height: 110px;
+    }
+    .size{
+        font-size: 32px;
+    }
+
+
+
+    /* ================================= Media query ===============================================  */
+
+    @media screen and (max-width:668px) {
+        .container{
+            width: 100%;
+        }
+        header{
+            flex-direction: column;
+            align-items: center;
+        }
+        .banner-img img{
+            width: 80%;
+            height: auto;
+            transition: .5s ease;
+        }
+        .banner{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+      
+
+        .photo-album {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        } 
+        .footer-logo img{
+            width: 70%;
+        }
+        
+    }
